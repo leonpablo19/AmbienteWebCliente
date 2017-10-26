@@ -1,0 +1,50 @@
+#viajes {
+    display: flex;
+    display: -webkit-flex; /* Para navegadores webkit, como Safari */
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+}
+.uno {
+    background-color: #bacee3;
+    order: 3;
+    -webkit-order: 3;
+}
+.dos{
+    background-color: #b6ebb3;
+    order: 2;
+    -webkit-order: 2;
+}
+.tres {
+    background-color: #7ebdbb;
+    order: 1;
+    -wbkit-order: 1;
+}
+.viajes-item > button {
+    margin-top: auto;   
+    width: 30%;  
+}
+.viajes-item > img { 
+    order: -1;
+    -webkit-order: -1;   
+    align-self: center;         
+    -webkit-align-self: center;   
+}
+.viajes-item > button {
+    margin-top: auto;   
+    width: 30%; 
+    align-self: center; 
+    -webkit-align-self: center; 
+}
+A { display: flex;}
+B { flex: 3 1 100px;}
+C { flex: 1 2 100px;}
+@media all and (max-width: 500px) {
+    #viajes { 
+        flex-direction: column;
+        -webkit-flex-direction: column; }
+    }
+    .viajes-item {
+        order: 0;
+        -webkit-order: 0; 
+        width: auto;
+    }
